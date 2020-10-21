@@ -48,12 +48,15 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
 import Settings from "views/examples/Settings.js";
 import TwitterRedesign from "views/examples/TwitterRedesign.js";
+
+import ShpBookingRegisterPage from "views/Pages/ShpBookingRegisterPage.js";
 // others
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/ShpBookingRegisterPage" render={(props) => <ShpBookingRegisterPage {...props} />} />
 	  <Route path="/intro" render={(props) => <Intro {...props} />} />
       <Route
         path="/nucleo-icons"

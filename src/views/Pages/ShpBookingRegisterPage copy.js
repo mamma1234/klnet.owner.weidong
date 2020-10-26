@@ -23,8 +23,8 @@ function ShpBookingRegisterPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("settings-page");
-    // window.scrollTo(0, 0);
-    // document.body.scrollTop = 0;
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
     return function cleanup() {
       document.body.classList.remove("settings-page");
     };
@@ -59,128 +59,12 @@ function ShpBookingRegisterPage() {
         <div className="profile-content section">
           <Container>
             <Row>
-              {/* <Col className="ml-auto mr-auto" xl="6" lg="8" md="8" sm="10" xs="10"> */}
-              <Col className="ml-auto mr-auto" >
+              <Col className="ml-auto mr-auto" xl="6" lg="8" md="8" sm="10" xs="10">
                 <Form className="settings-form">
-                <FormGroup>                
-                    <label><h3>Carrier</h3></label>
-                      {/* <CardHeader  id="headingOne" role="tab"> */}
-                        <h5 className="mb-0 panel-title">
-                          <Row>
-                            <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
-                              <Select
-                                  className="react-select react-select-primary"
-                                  classNamePrefix="react-select"
-                                  name="singleSelect"
-                                  value={singleSelect}
-                                  onChange={value => setSingleSelect(value)}
-                                  options={[
-                                    {
-                                      value: "",
-                                      label: "Single Option",
-                                      isDisabled: true
-                                    },
-                                    { value: "2", label: "Foobar" },
-                                    { value: "3", label: "Is great" },
-                                    { value: "4", label: "가나다" }
-                                  ]}
-                                  placeholder="Single Select"
-                              />
-                            </Col>
-                            <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
-                              <a
-                                aria-expanded={collapses.includes(0)}
-                                className="collapsed"
-                                data-parent="#accordion"
-                                href="#pablo"
-                                id="collapseZero"
-                                onClick={e => {
-                                  e.preventDefault();
-                                  changeCollapse(0);
-                                }}
-                              >
-                                <i className="nc-icon nc-minimal-down" />
-                              </a>
-                            </Col>
-                          </Row>
-                        </h5>
-                      {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes(0)}>
-                        {/* <CardBody> */}
-                          <Row >
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Name</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Carrier Name"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Carrier Code"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Person in Charge"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Tel"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Email"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Fax"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Dept"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="12" lg="12" md="12" sm="12" xs="12">
-                                {/* <label>Address</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Address"
-                                  type="text"
-                                />
-                            </Col>
-                          </Row>
-                        {/* </CardBody> */}
-                      </Collapse>
-                    {/* </Card> */}
-                  </FormGroup>      
-                    {/* <Card className="no-transition"> */}
+                    <Card className="no-transition">
                   <FormGroup>                
                     <label><h3>Shipper</h3></label>
-                      {/* <CardHeader  id="headingOne" role="tab"> */}
+                      <CardHeader  id="headingOne" role="tab">
                         <h5 className="mb-0 panel-title">
                           <Row>
                             <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
@@ -220,11 +104,11 @@ function ShpBookingRegisterPage() {
                             </Col>
                           </Row>
                         </h5>
-                      {/* </CardHeader> */}
+                      </CardHeader>
                       <Collapse isOpen={collapses.includes(1)}>
                         {/* <CardBody> */}
                           <Row >
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Name</label> */}
                                 <Input
                                   className="border-input"
@@ -232,7 +116,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Code</label> */}
                                 <Input
                                   className="border-input"
@@ -240,7 +124,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -248,7 +132,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -256,7 +140,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -264,7 +148,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -272,7 +156,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -305,7 +189,7 @@ function ShpBookingRegisterPage() {
                   <FormGroup>                
                     <label><h3>Forwarder</h3></label>
                     {/* <Card className="no-transition"> */}
-                      {/* <CardHeader className="card-collapse bg-white" id="headingTwo" role="tab"> */}
+                      <CardHeader className="card-collapse bg-white" id="headingTwo" role="tab">
                         <h5 className="mb-0 panel-title">
                           <Row>
                             <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
@@ -345,11 +229,11 @@ function ShpBookingRegisterPage() {
                             </Col>
                           </Row>
                         </h5>
-                      {/* </CardHeader> */}
+                      </CardHeader>
                       <Collapse isOpen={collapses.includes(2)}>
                         {/* <CardBody> */}
                           <Row>
-                          <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                          <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Name</label> */}
                                 <Input
                                   className="border-input"
@@ -357,7 +241,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Code</label> */}
                                 <Input
                                   className="border-input"
@@ -365,7 +249,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -373,7 +257,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -381,7 +265,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -389,7 +273,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -397,7 +281,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -413,6 +297,14 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
+                            <Col className="mt-3" xl="9" lg="9" md="9" sm="9" xs="9">
+                                {/* <label>Address</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Payment"
+                                  type="text"
+                                />
+                            </Col>
                           </Row>
                         {/* </CardBody> */}
                       </Collapse>
@@ -422,7 +314,7 @@ function ShpBookingRegisterPage() {
                   <FormGroup>                
                     <label><h3>Consignee</h3></label>
                     {/* <Card className="no-transition"> */}
-                      {/* <CardHeader className="card-collapse bg-white" id="headingTree" role="tab"> */}
+                      <CardHeader className="card-collapse bg-white" id="headingTree" role="tab">
                         <h5 className="mb-0 panel-title">
                           <Row>
                             <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
@@ -462,11 +354,11 @@ function ShpBookingRegisterPage() {
                             </Col>
                           </Row>
                         </h5>
-                      {/* </CardHeader> */}
+                      </CardHeader>
                       <Collapse isOpen={collapses.includes(3)}>
                         {/* <CardBody> */}
                           <Row>
-                          <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                          <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Name</label> */}
                                 <Input
                                   className="border-input"
@@ -474,7 +366,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Shipper Code</label> */}
                                 <Input
                                   className="border-input"
@@ -482,7 +374,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -490,7 +382,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -498,7 +390,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -506,7 +398,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -514,7 +406,7 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                            <Col className="mt-3" xl="6" lg="6" md="6" sm="9" xs="6">
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
@@ -530,11 +422,19 @@ function ShpBookingRegisterPage() {
                                   type="text"
                                 />
                             </Col>
+                            <Col className="mt-3" xl="9" lg="9" md="9" sm="9" xs="9">
+                                {/* <label>Address</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Payment"
+                                  type="text"
+                                />
+                            </Col>
                           </Row>
                         {/* </CardBody> */}
                       </Collapse>
                   </FormGroup>
-                    {/* </Card> */}
+                    </Card>
 
                   <div className="text-center">
                     <Button

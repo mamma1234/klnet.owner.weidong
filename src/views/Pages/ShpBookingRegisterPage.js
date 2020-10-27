@@ -17,7 +17,7 @@ import {
   UncontrolledCollapse
 } from "reactstrap";
 import Select from "react-select";
-
+import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
 
 function ShpBookingRegisterPage() {
   document.documentElement.classList.remove("nav-open");
@@ -40,12 +40,32 @@ function ShpBookingRegisterPage() {
   }; 
 
   const [singleSelect, setSingleSelect] = React.useState([]);
-
-  const clickCollapse = collapse => {
-    setCollapses([1]);
+  const setCarrierSelect = carrier => {
+    console.log("collapses:", collapses);
+    setCollapses(["carrier"]);
+    setSingleSelect(carrier);
+  };
+  const setShipperSelect = shipper => {
+    console.log("collapses:", collapses);
+    setCollapses(["shipper"]);
+    setSingleSelect(shipper);
+  };
+  const setForwarderSelect = forwarder => {
+    console.log("collapses:", collapses);
+    setCollapses(["forwarder"]);
+    setSingleSelect(forwarder);
+  };
+  const setConsigneeSelect = consignee => {
+    console.log("collapses:", collapses);
+    setCollapses(["consignee"]);
+    setSingleSelect(consignee);
   };
 
 
+
+  const clickCollapse = collapse => {
+    setCollapses([collapse]);
+  };
   const clickUnCollapse = collapse => {
     setCollapses([]);
   };
@@ -54,7 +74,7 @@ function ShpBookingRegisterPage() {
 
   return (
     <>
- 
+      <WeidongNavbar />
       <div className="wrapper">
         <div className="profile-content section">
           <Container>
@@ -62,6 +82,35 @@ function ShpBookingRegisterPage() {
               {/* <Col className="ml-auto mr-auto" xl="6" lg="8" md="8" sm="10" xs="10"> */}
               <Col className="ml-auto mr-auto" >
                 <Form className="settings-form">
+                <FormGroup> 
+                    <label><h3>General</h3></label>
+                    <h5 className="mb-0 panel-title">
+                      <Row>
+                        <Col className="" xl="3" lg="3" md="3" sm="4" xs="4">
+                          <Input
+                            className="border-input"
+                            placeholder="Shipper Booking Number"
+                            type="text"
+                          />
+                        </Col>
+                        <Col className="" xl="3" lg="3" md="3" sm="4" xs="4">
+                          <Input
+                            className="border-input"
+                            placeholder="SC Number"
+                            type="text"
+                          />
+                        </Col>
+                        <Col className="" xl="3" lg="3" md="3" sm="4" xs="4">
+                          <Input
+                            className="border-input"
+                            placeholder="Carrier Booking Number"
+                            type="text"
+                          />
+                        </Col>
+                      </Row>
+                    </h5>
+                    
+                </FormGroup>
                 <FormGroup>                
                     <label><h3>Carrier</h3></label>
                       {/* <CardHeader  id="headingOne" role="tab"> */}
@@ -73,7 +122,7 @@ function ShpBookingRegisterPage() {
                                   classNamePrefix="react-select"
                                   name="singleSelect"
                                   value={singleSelect}
-                                  onChange={value => setSingleSelect(value)}
+                                  onChange={value => setCarrierSelect(value)}
                                   options={[
                                     {
                                       value: "",
@@ -89,14 +138,14 @@ function ShpBookingRegisterPage() {
                             </Col>
                             <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
                               <a
-                                aria-expanded={collapses.includes(0)}
+                                aria-expanded={collapses.includes("carrier")}
                                 className="collapsed"
                                 data-parent="#accordion"
                                 href="#pablo"
                                 id="collapseZero"
                                 onClick={e => {
                                   e.preventDefault();
-                                  changeCollapse(0);
+                                  changeCollapse("carrier");
                                 }}
                               >
                                 <i className="nc-icon nc-minimal-down" />
@@ -105,7 +154,7 @@ function ShpBookingRegisterPage() {
                           </Row>
                         </h5>
                       {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes(0)}>
+                      <Collapse isOpen={collapses.includes("carrier")}>
                         {/* <CardBody> */}
                           <Row >
                             <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
@@ -189,7 +238,7 @@ function ShpBookingRegisterPage() {
                                   classNamePrefix="react-select"
                                   name="singleSelect"
                                   value={singleSelect}
-                                  onChange={value => setSingleSelect(value)}
+                                  onChange={value => setShipperSelect(value)}
                                   options={[
                                     {
                                       value: "",
@@ -205,14 +254,14 @@ function ShpBookingRegisterPage() {
                             </Col>
                             <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
                               <a
-                                aria-expanded={collapses.includes(1)}
+                                aria-expanded={collapses.includes("shipper")}
                                 className="collapsed"
                                 data-parent="#accordion"
                                 href="#pablo"
                                 id="collapseOne"
                                 onClick={e => {
                                   e.preventDefault();
-                                  changeCollapse(1);
+                                  changeCollapse("shipper");
                                 }}
                               >
                                 <i className="nc-icon nc-minimal-down" />
@@ -221,7 +270,7 @@ function ShpBookingRegisterPage() {
                           </Row>
                         </h5>
                       {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes(1)}>
+                      <Collapse isOpen={collapses.includes("shipper")}>
                         {/* <CardBody> */}
                           <Row >
                             <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
@@ -314,7 +363,7 @@ function ShpBookingRegisterPage() {
                                   classNamePrefix="react-select"
                                   name="singleSelect"
                                   value={singleSelect}
-                                  onChange={value => setSingleSelect(value)}
+                                  onChange={value => setForwarderSelect(value)}
                                   options={[
                                     {
                                       value: "",
@@ -330,14 +379,14 @@ function ShpBookingRegisterPage() {
                             </Col>
                             <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
                               <a
-                                aria-expanded={collapses.includes(2)}
+                                aria-expanded={collapses.includes("forwarder")}
                                 className="collapsed"
                                 data-parent="#accordion"
                                 href="#pablo"
                                 id="collapseTwo"
                                 onClick={e => {
                                   e.preventDefault();
-                                  changeCollapse(2);
+                                  changeCollapse("forwarder");
                                 }}
                               >
                                 <i className="nc-icon nc-minimal-down" />
@@ -346,7 +395,7 @@ function ShpBookingRegisterPage() {
                           </Row>
                         </h5>
                       {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes(2)}>
+                      <Collapse isOpen={collapses.includes("forwarder")}>
                         {/* <CardBody> */}
                           <Row>
                           <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
@@ -431,7 +480,7 @@ function ShpBookingRegisterPage() {
                                   classNamePrefix="react-select"
                                   name="singleSelect"
                                   value={singleSelect}
-                                  onChange={value => setSingleSelect(value)}
+                                  onChange={value => setConsigneeSelect(value)}
                                   options={[
                                     {
                                       value: "",
@@ -447,14 +496,14 @@ function ShpBookingRegisterPage() {
                             </Col>
                             <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
                               <a
-                                aria-expanded={collapses.includes(3)}
+                                aria-expanded={collapses.includes("consignee")}
                                 className="collapsed"
                                 data-parent="#accordion"
                                 href="#pablo"
                                 id="collapseThree"
                                 onClick={e => {
                                   e.preventDefault();
-                                  changeCollapse(3);
+                                  changeCollapse("consignee");
                                 }}
                               >
                                 <i className="nc-icon nc-minimal-down" />
@@ -463,7 +512,7 @@ function ShpBookingRegisterPage() {
                           </Row>
                         </h5>
                       {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes(3)}>
+                      <Collapse isOpen={collapses.includes("consignee")}>
                         {/* <CardBody> */}
                           <Row>
                           <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
@@ -548,7 +597,7 @@ function ShpBookingRegisterPage() {
 
                   <Button color="primary" onClick={() => setRSelected(1)} active={rSelected === 1}>One</Button>
 
-                  <Button color="primary" onClick={() => clickCollapse(1)} active={rSelected === 1}>Collapse </Button>
+                  <Button color="primary" onClick={() => clickCollapse("shipper")} active={rSelected === 1}>Collapse </Button>
 
                   <Button color="primary" onClick={() => clickUnCollapse(1)} active={rSelected === 1}>UnCollapse </Button>
                 </Form>

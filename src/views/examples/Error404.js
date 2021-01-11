@@ -4,7 +4,9 @@ import React from "react";
 import { Card, CardBody, Container, Row, Col } from "reactstrap";
 
 // core components
-import ColorNavbar from "components/Navbars/ColorNavbar.js";
+// import ColorNavbar from "components/Navbars/ColorNavbar.js";
+import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
+
 
 function Error404() {
   document.documentElement.classList.remove("nav-open");
@@ -18,7 +20,7 @@ function Error404() {
   });
   return (
     <>
-      <ColorNavbar />
+      <WeidongNavbar />
       <div
         className="background-img"
         style={{

@@ -145,7 +145,7 @@ function SearchWithSidebar() {
                             id="tooltip890195664"
                             outline
                           >
-                            <i className="fa fa-plus" />
+                            <i className="fa fa-minus" />
                           </Button>
                           <UncontrolledTooltip
                             delay={0}

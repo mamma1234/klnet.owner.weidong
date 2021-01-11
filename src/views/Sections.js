@@ -2,7 +2,7 @@ import React from "react";
 // reactstrap components
 
 // core components
-import WhiteNavbar from "components/Navbars/WhiteNavbar.js";
+import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
 import SectionHeader from "./sections-sections/SectionHeader.js";
@@ -67,7 +67,7 @@ function Sections() {
   });
   return (
     <>
-      <WhiteNavbar />
+      <WeidongNavbar />
       <div className="section-space" />
       <SectionHeader />
       <SectionFeature />

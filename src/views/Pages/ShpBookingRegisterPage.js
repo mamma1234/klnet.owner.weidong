@@ -15,9 +15,7 @@ import {
   CardBody,
   Collapse,
   UncontrolledCollapse,
-  ButtonGroup,
-  Table, 
-  UncontrolledTooltip
+  ButtonGroup
 } from "reactstrap";
 import Select from "react-select";
 import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
@@ -67,17 +65,20 @@ function ShpBookingRegisterPage() {
     console.log("collapses:", collapses);
     setCollapses(["schedule"]);
     setSingleSelect(schedule);
-  };
-  const setCargoSelect = cargo => {
+  }
+  const setTransportSelect = transport => {
     console.log("collapses:", collapses);
-    setCollapses(["cargo"]);
-    setSingleSelect(cargo);
-  };
+    setCollapses(["transport"]);
+    setSingleSelect(transport);
+  }
   const setContainerSelect = container => {
     console.log("collapses:", collapses);
     setCollapses(["container"]);
     setSingleSelect(container);
-  };
+  }
+
+
+
 
   const clickCollapse = collapse => {
     setCollapses([collapse]);
@@ -98,7 +99,7 @@ function ShpBookingRegisterPage() {
               {/* <Col className="ml-auto mr-auto" xl="6" lg="8" md="8" sm="10" xs="10"> */}
               <Col className="ml-auto mr-auto" >
                 <Form className="settings-form">
-                <FormGroup> 
+                  <FormGroup> 
                     <label><h3>General</h3></label>
                     <h5 className="mb-0 panel-title">
                       <Row>
@@ -127,7 +128,126 @@ function ShpBookingRegisterPage() {
                     </h5>
                     
                 </FormGroup>
+
                 <FormGroup>                
+                    <label><h3>Schedule</h3></label>
+                    {/* <Card className="no-transition"> */}
+                      {/* <CardHeader className="card-collapse bg-white" id="headingTree" role="tab"> */}
+                        <h5 className="mb-0 panel-title">
+                          <Row>
+                            <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
+                              <Select
+                                  className="react-select react-select-primary"
+                                  classNamePrefix="react-select"
+                                  name="singleSelect"
+                                  value={singleSelect}
+                                  onChange={value => setScheduleSelect(value)}
+                                  options={[
+                                    {
+                                      value: "",
+                                      label: "Single Option",
+                                      isDisabled: true
+                                    },
+                                    { value: "2", label: "Foobar" },
+                                    { value: "3", label: "Is great" },
+                                    { value: "4", label: "가나다" }
+                                  ]}
+                                  placeholder="Single Select"
+                              />
+                            </Col>
+                            <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
+                              <a
+                                aria-expanded={collapses.includes("schedule")}
+                                className="collapsed"
+                                data-parent="#accordion"
+                                href="#pablo"
+                                id="collapseThree"
+                                onClick={e => {
+                                  e.preventDefault();
+                                  changeCollapse("schedule");
+                                }}
+                              >
+                                <i className="nc-icon nc-minimal-down" />
+                              </a>
+                            </Col>
+                          </Row>
+                        </h5>
+                      {/* </CardHeader> */}
+                      <Collapse isOpen={collapses.includes("schedule")}>
+                        {/* <CardBody> */}
+                          <Row>
+                          <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Shipper Name</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Consignee Name"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Shipper Code</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Consignee Code"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Person in Charge"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Tel"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Email"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Fax"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Dept"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="12" lg="12" md="12" sm="12" xs="12">
+                                {/* <label>Address</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Address"
+                                  type="text"
+                                />
+                            </Col>
+                          </Row>
+                        {/* </CardBody> */}
+                      </Collapse>
+
+
+                  </FormGroup>
+
+                  <FormGroup>                
                     <label><h3>Carrier</h3></label>
                       {/* <CardHeader  id="headingOne" role="tab"> */}
                         <h5 className="mb-0 panel-title">
@@ -598,236 +718,15 @@ function ShpBookingRegisterPage() {
                           </Row>
                         {/* </CardBody> */}
                       </Collapse>
-                  </FormGroup>
 
-                  <FormGroup>                
-                    <label><h3>Schedule</h3></label>
-                    {/* <Card className="no-transition"> */}
-                      {/* <CardHeader className="card-collapse bg-white" id="headingTree" role="tab"> */}
-                        <h5 className="mb-0 panel-title">
-                          <Row>
-                            <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
-                              <Select
-                                  className="react-select react-select-primary"
-                                  classNamePrefix="react-select"
-                                  name="singleSelect"
-                                  value={singleSelect}
-                                  onChange={value => setScheduleSelect(value)}
-                                  options={[
-                                    {
-                                      value: "",
-                                      label: "Single Option",
-                                      isDisabled: true
-                                    },
-                                    { value: "2", label: "Foobar" },
-                                    { value: "3", label: "Is great" },
-                                    { value: "4", label: "가나다" }
-                                  ]}
-                                  placeholder="Single Select"
-                              />
-                            </Col>
-                            <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
-                              <a
-                                aria-expanded={collapses.includes("schedule")}
-                                className="collapsed"
-                                data-parent="#accordion"
-                                href="#pablo"
-                                id="collapseThree"
-                                onClick={e => {
-                                  e.preventDefault();
-                                  changeCollapse("schedule");
-                                }}
-                              >
-                                <i className="nc-icon nc-minimal-down" />
-                              </a>
-                            </Col>
-                          </Row>
-                        </h5>
-                      {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes("schedule")}>
-                        {/* <CardBody> */}
-                          <Row>
-                          <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Name</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Move Type"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Vessel"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Voyage"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="ETD"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="ETA"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="POR"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="POL"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="POD"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Place of Delivery"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="12" lg="12" md="12" sm="12" xs="12">
-                                {/* <label>Address</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Final Destination"
-                                  type="text"
-                                />
-                            </Col>
-                          </Row>
-                        {/* </CardBody> */}
-                      </Collapse>
-                  </FormGroup>
 
-                  <FormGroup>                
-                    <label><h3>Cargo</h3></label>
-                    {/* <Card className="no-transition"> */}
-                      {/* <CardHeader className="card-collapse bg-white" id="headingTree" role="tab"> */}
-                        <h5 className="mb-0 panel-title">
-                          <Row>
-                            <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
-                              <Select
-                                  className="react-select react-select-primary"
-                                  classNamePrefix="react-select"
-                                  name="singleSelect"
-                                  value={singleSelect}
-                                  onChange={value => setCargoSelect(value)}
-                                  options={[
-                                    {
-                                      value: "",
-                                      label: "Single Option",
-                                      isDisabled: true
-                                    },
-                                    { value: "2", label: "Foobar" },
-                                    { value: "3", label: "Is great" },
-                                    { value: "4", label: "가나다" }
-                                  ]}
-                                  placeholder="Single Select"
-                              />
-                            </Col>
-                            <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
-                              <a
-                                aria-expanded={collapses.includes("cargo")}
-                                className="collapsed"
-                                data-parent="#accordion"
-                                href="#pablo"
-                                id="collapseThree"
-                                onClick={e => {
-                                  e.preventDefault();
-                                  changeCollapse("cargo");
-                                }}
-                              >
-                                <i className="nc-icon nc-minimal-down" />
-                              </a>
-                            </Col>
-                          </Row>
-                        </h5>
-                      {/* </CardHeader> */}
-                      <Collapse isOpen={collapses.includes("cargo")}>
-                        {/* <CardBody> */}
-                          <Row>
-                          <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Name</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Cargo Type"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Cargo Name"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="HS Code"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Weight"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Person in Charge</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Volume"
-                                  type="text"
-                                />
-                            </Col>
-                          </Row>
-                        {/* </CardBody> */}
-                      </Collapse>
                   </FormGroup>
+                    {/* </Card> */}
+
 
                   <FormGroup>                
                     <label><h3>Container</h3></label>
-                    {/* <Card className="no-transition"> */}
-                      {/* <CardHeader className="card-collapse bg-white" id="headingTree" role="tab"> */}
+                      {/* <CardHeader  id="headingOne" role="tab"> */}
                         <h5 className="mb-0 panel-title">
                           <Row>
                             <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
@@ -856,7 +755,7 @@ function ShpBookingRegisterPage() {
                                 className="collapsed"
                                 data-parent="#accordion"
                                 href="#pablo"
-                                id="collapseThree"
+                                id="collapseZero"
                                 onClick={e => {
                                   e.preventDefault();
                                   changeCollapse("container");
@@ -870,88 +769,12 @@ function ShpBookingRegisterPage() {
                       {/* </CardHeader> */}
                       <Collapse isOpen={collapses.includes("container")}>
                         {/* <CardBody> */}
-                          <Row>
-                          <Table className="mt-3">
-                            <thead>
-                              <tr>
-                                <th className="text-center"></th>
-                                <th>Product</th>
-                                <th className="th-description">Color</th>
-                                <th className="th-description">Size</th>
-                                <th className="text-right">Price</th>
-                                <th className="text-right">Qty</th>
-                                <th className="text-right">Amount</th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <div className="img-container">
-                                    <img
-                                      alt="..."
-                                      src={
-                                        "https://images.thenorthface.com/is/image/TheNorthFace/NF0A2VFL_619_hero"
-                                      }
-                                    ></img>
-                                  </div>
-                                </td>
-                                <td className="td-name">
-                                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                                    Spring Jacket
-                                  </a>
-                                  <br></br>
-                                  <small>by Dolce&amp;Gabbana</small>
-                                </td>
-                                <td>Red</td>
-                                <td>M</td>
-                                <td className="td-number">
-                                  <small>€</small>
-                                  549
-                                </td>
-                                <td className="td-number">
-                                  1{" "}
-                                  <ButtonGroup>
-                                    <Button color="info" size="sm">
-                                      <i className="nc-icon nc-simple-delete"></i>
-                                    </Button>
-                                    <Button color="info" size="sm">
-                                      <i className="nc-icon nc-simple-add"></i>
-                                    </Button>
-                                  </ButtonGroup>
-                                </td>
-                                <td className="td-number">
-                                  <small>€</small>
-                                  549
-                                </td>
-                                <td className="td-actions">
-                                  <Button
-                                    className="btn-round btn-icon btn-neutral"
-                                    color="default"
-                                    data-placement="left"
-                                    id="tooltip472286037"
-                                    type="button"
-                                  >
-                                    <i className="nc-icon nc-simple-remove"></i>
-                                  </Button>
-                                  <UncontrolledTooltip
-                                    delay={0}
-                                    placement="left"
-                                    target="tooltip472286037"
-                                  >
-                                    Remove item
-                                  </UncontrolledTooltip>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </Table>
-                        </Row>
-                          <Row>
+                          <Row >
                             <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
                                 {/* <label>Shipper Name</label> */}
                                 <Input
                                   className="border-input"
-                                  placeholder="Cargo Type"
+                                  placeholder="Carrier Name"
                                   type="text"
                                 />
                             </Col>
@@ -959,7 +782,7 @@ function ShpBookingRegisterPage() {
                                 {/* <label>Shipper Code</label> */}
                                 <Input
                                   className="border-input"
-                                  placeholder="Cargo Name"
+                                  placeholder="Carrier Code"
                                   type="text"
                                 />
                             </Col>
@@ -967,15 +790,7 @@ function ShpBookingRegisterPage() {
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
-                                  placeholder="HS Code"
-                                  type="text"
-                                />
-                            </Col>
-                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
-                                {/* <label>Shipper Code</label> */}
-                                <Input
-                                  className="border-input"
-                                  placeholder="Weight"
+                                  placeholder="Person in Charge"
                                   type="text"
                                 />
                             </Col>
@@ -983,17 +798,165 @@ function ShpBookingRegisterPage() {
                                 {/* <label>Person in Charge</label> */}
                                 <Input
                                   className="border-input"
-                                  placeholder="Volume"
+                                  placeholder="Tel"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Email"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Fax"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Dept"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="12" lg="12" md="12" sm="12" xs="12">
+                                {/* <label>Address</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Address"
                                   type="text"
                                 />
                             </Col>
                           </Row>
                         {/* </CardBody> */}
                       </Collapse>
-                  </FormGroup>
                     {/* </Card> */}
+                  </FormGroup>
 
-                  <div className="text-center">
+                  <FormGroup>                
+                    <label><h3>Transport</h3></label>
+                      {/* <CardHeader  id="headingOne" role="tab"> */}
+                        <h5 className="mb-0 panel-title">
+                          <Row>
+                            <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
+                              <Select
+                                  className="react-select react-select-primary"
+                                  classNamePrefix="react-select"
+                                  name="singleSelect"
+                                  value={singleSelect}
+                                  onChange={value => setTransportSelect(value)}
+                                  options={[
+                                    {
+                                      value: "",
+                                      label: "Single Option",
+                                      isDisabled: true
+                                    },
+                                    { value: "2", label: "Foobar" },
+                                    { value: "3", label: "Is great" },
+                                    { value: "4", label: "가나다" }
+                                  ]}
+                                  placeholder="Single Select"
+                              />
+                            </Col>
+                            <Col xl="1" lg="1" md="1" sm="1" xs="1">                                              
+                              <a
+                                aria-expanded={collapses.includes("transport")}
+                                className="collapsed"
+                                data-parent="#accordion"
+                                href="#pablo"
+                                id="collapseZero"
+                                onClick={e => {
+                                  e.preventDefault();
+                                  changeCollapse("transport");
+                                }}
+                              >
+                                <i className="nc-icon nc-minimal-down" />
+                              </a>
+                            </Col>
+                          </Row>
+                        </h5>
+                      {/* </CardHeader> */}
+                      <Collapse isOpen={collapses.includes("transport")}>
+                        {/* <CardBody> */}
+                          <Row >
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Shipper Name</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Carrier Name"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Shipper Code</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Carrier Code"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Person in Charge"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Tel"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Email"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Fax"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="3" lg="3" md="3" sm="4" xs="4">
+                                {/* <label>Person in Charge</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Dept"
+                                  type="text"
+                                />
+                            </Col>
+                            <Col className="mt-3" xl="12" lg="12" md="12" sm="12" xs="12">
+                                {/* <label>Address</label> */}
+                                <Input
+                                  className="border-input"
+                                  placeholder="Address"
+                                  type="text"
+                                />
+                            </Col>
+                          </Row>
+                        {/* </CardBody> */}
+                      </Collapse>
+                    {/* </Card> */}
+                  </FormGroup>
+
+                  {/* <div className="text-center">
                     <Button
                       className="btn-wd btn-round"
                       color="info"
@@ -1001,13 +964,32 @@ function ShpBookingRegisterPage() {
                     >
                       Save
                     </Button>
-                  </div>
-
+                  </div> */}
+                  <Row>
+                    <Col className="" xl="4" lg="6" md="6" sm="8" xs="8">
+                          <Button color="secondary" onClick={() => alert('save')} >Save</Button>         
+                    </Col>
+                    <Col xl="1" lg="1" md="1" sm="1" xs="1">
+                          <Button color="secondary" onClick={() => alert('send')} >Send</Button>
+                    </Col>
+                  </Row>
+                  {/* <Row>
+                    <Col className="" xl="1" lg="1" md="1" sm="1" xs="1">
+                      <ButtonGroup color="secondary" >
+                          <Button onClick={() => alert('save')} >Save</Button>         
+                          <Button onClick={() => alert('send')} >Send</Button>
+                      </ButtonGroup>
+                    </Col>
+                  </Row> */}
+                  <Row><Col>
                   <Button color="primary" onClick={() => setRSelected(1)} active={rSelected === 1}>One</Button>
 
                   <Button color="primary" onClick={() => clickCollapse("shipper")} active={rSelected === 1}>Collapse </Button>
 
                   <Button color="primary" onClick={() => clickUnCollapse(1)} active={rSelected === 1}>UnCollapse </Button>
+                  </Col></Row>
+                 
+
                 </Form>
               </Col>
             </Row>

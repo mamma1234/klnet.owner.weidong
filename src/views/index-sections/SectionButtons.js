@@ -709,10 +709,10 @@ function SectionButtons() {
                 <h3>Checkboxes</h3>
               </div>
               <FormGroup check>
-                <Label check>
+                
                   <Input defaultValue="" type="checkbox" />
-                  Unchecked <span className="form-check-sign" />
-                </Label>
+                 
+                
               </FormGroup>
               <FormGroup check>
                 <Label check>

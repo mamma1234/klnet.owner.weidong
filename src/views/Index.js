@@ -5,13 +5,9 @@ import React from "react";
 // } from "reactstrap";
 
 // core components
-import AuthNavbar from "components/Navbars/WeidongAuthNavbar.js";
 import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
-import ScheduleTables from "views/schedule/ScheduleTables.js";
-import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
-import FooterWhite from "components/Footers/FooterWhite.js";
 // sections for this page
 import SectionButtons from "./index-sections/SectionButtons.js";
 import SectionNavigation from "./index-sections/SectionNavigation.js";
@@ -27,7 +23,6 @@ import SectionCommentsAreaSmall from "./index-sections/SectionCommentsAreaSmall.
 import SectionJavaScript from "./index-sections/SectionJavaScript.js";
 import SectionCards from "./index-sections/SectionCards.js";
 
-
 function Index() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -40,10 +35,9 @@ function Index() {
   });
   return (
     <>
-	  <AuthNavbar />
-      <WeidongNavbar />
+      <WeidongNavbar/>
       <IndexHeader />
-      {/*<div className="main">
+      <div className="main">
         <SectionButtons />
         <SectionNavigation />
       </div>
@@ -58,9 +52,7 @@ function Index() {
       <SectionCommentsAreaSmall />
       <SectionJavaScript />
       <SectionCards />
-	  <FooterBlack />
-	  */}
-	  <FooterWhite />
+      <FooterBlack />
     </>
   );
 }

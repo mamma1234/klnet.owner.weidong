@@ -217,7 +217,7 @@ function SectionHeader() {
   };
   return (
     <>
-      <div className="section section-header cd-section" id="headers" style={{paddingTop:'90px'}}>
+      <div className="section section-header cd-section" id="headers">
         {/* ********* HEADER 1 ********* */}
         <div className="header-1">
           <Navbar className="navbar-transparent navbar-absolute" expand="lg">

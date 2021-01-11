@@ -25,8 +25,8 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
+import WeidongIndex from "views/Weidong_Index.js";
 import Index from "views/Index.js";
-import Intro from "views/Intro.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import Sections from "views/Sections.js";
 import Presentation from "views/Presentation.js";
@@ -48,19 +48,64 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
 import Settings from "views/examples/Settings.js";
 import TwitterRedesign from "views/examples/TwitterRedesign.js";
-
-import ShpBookingRegisterPage from "views/Pages/ShpBookingRegisterPage.js";
+import Bookings from "views/bookings/bookingReq/index.js";
+import Bookings2 from "views/bookings/bookingReq/index2.js";
+import Bookings3 from "views/bookings3/index.js";
+import BookingList from "views/bookings/bookingList/index.js";
+import Dashboard from "views/dashboard/index.js";
+import Schedule from "views/schedule/index.js";
+import SRNew from "views/sr/request/index.js";
+import SRList from "views/sr/srList/index.js";
+import FullScreenMain from  "views/fullscreen/index.js"
 // others
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route path="/ShpBookingRegisterPage" render={(props) => <ShpBookingRegisterPage {...props} />} />
-	  <Route path="/intro" render={(props) => <Intro {...props} />} />
+      <Route
+        path="/weidongIndex"
+        render={(props) => <WeidongIndex {...props} />}
+      />
       <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
+      />
+      <Route
+        path="/fullscreen"
+        render={(props) => <FullScreenMain {...props} />}
+      />
+      <Route
+        path="/schedule"
+        render={(props) => <Schedule {...props} />}
+      />
+      <Route
+        path="/srlist"
+        render={(props) => <SRList {...props} />}
+      />
+      <Route
+        path="/srnew"
+        render={(props) => <SRNew {...props} />}
+      />
+      <Route
+        path="/bookinglist"
+        render={(props) => <BookingList {...props} />}
+      />
+      <Route
+        path="/dashboard"
+        render={(props) => <Dashboard {...props} />}
+      />
+      <Route
+        path="/booking"
+        render={(props) => <Bookings {...props} />}
+      />
+      <Route
+        path="/booking2"
+        render={(props) => <Bookings2 {...props} />}
+      />
+      <Route
+        path="/booking3"
+        render={(props) => <Bookings3 {...props} />}
       />
       <Route path="/sections" render={(props) => <Sections {...props} />} />
       <Route
@@ -106,7 +151,7 @@ ReactDOM.render(
         path="/twitter-redesign"
         render={(props) => <TwitterRedesign {...props} />}
       />
-      <Redirect to="/presentation" />
+      <Redirect to="/weidongIndex" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

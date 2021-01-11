@@ -1,0 +1,8 @@
+.table-cntr-hd {
+    font-size:10px;
+    font-weight: 'bold';
+}
+.text-area-2 {
+    resize: none;
+    max-lines: 2;
+}

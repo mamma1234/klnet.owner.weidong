@@ -2495,7 +2495,7 @@ License - nucleoapp.com/license/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: '맑은 고딕','Malgun Gothic';
   font-weight: 300; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -2631,6 +2631,11 @@ blockquote small {
   margin-bottom: 25px;
   min-height: 32px; }
 
+.title-weidong {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  min-height: 32px; }
+  
 .title.text-center {
   margin-bottom: 50px; }
 
@@ -4570,10 +4575,10 @@ textarea.form-control {
     margin: 15px 3px;
     padding: 10px 15px;
     opacity: .8;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #66615B; }
+    color: #111111; }
   .navbar .navbar-nav .nav-item .nav-link.btn {
     margin: 15px 3px;
     padding: 9px; }
@@ -4668,7 +4673,7 @@ textarea.form-control {
     font-weight: 600;
     margin: 5px 0px;
     padding: 20px 15px;
-    font-size: 14px;
+    font-size: 12px;
     color: #66615B;
     text-transform: uppercase; }
   .navbar .navbar-nav .nav-item .nav-link {
@@ -4676,10 +4681,10 @@ textarea.form-control {
     margin: 15px 3px;
     padding: 10px 15px;
     opacity: .8;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #66615B; }
+    color: #444444; }
   .navbar .navbar-nav .nav-item .nav-link.btn {
     margin: 15px 3px;
     padding: 9px; }
@@ -6436,7 +6441,7 @@ textarea.form-control {
   .social-line-black .title {
     color: #FFFFFF; }
 
-.page-header {
+.page-header {file:///C:/Users/User/Downloads/Telegram Desktop/202011241528476LJ10002.trc
   background-color: #B2AFAB;
   background-position: center center;
   background-size: cover;
@@ -6451,6 +6456,8 @@ textarea.form-control {
     max-height: 700px; }
   .page-header.page-header-xs {
     min-height: 40vh !important; }
+  .page-header.page-header-xss {
+    min-height: 20vh !important; }
   .page-header .page-header-image {
     position: absolute;
     background-size: cover;
@@ -12521,7 +12528,7 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
     box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1); }
   .dropdown.show .dropdown-menu {
     display: block !important;
-    position: absolute;
+    position: static !important;
     float: none !important;
     background: transparent !important; }
   .navbar .navbar-nav .dropdown-menu .dropdown-menu {

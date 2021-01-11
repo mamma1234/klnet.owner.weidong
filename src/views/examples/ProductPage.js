@@ -301,7 +301,7 @@ function ProductPage() {
               <h4>Frequently Asked Questions</h4>
               <br />
               <div id="acordeon">
-                <div aria-multiselectable={true} id="accordion" role="tablist">
+                <div aria-multiselectable={false} id="accordion" role="tablist">
                   <Card className="no-transition">
                     <CardHeader
                       className="card-collapse"

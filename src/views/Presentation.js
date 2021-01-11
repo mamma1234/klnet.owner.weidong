@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 
 // core components
-import ColorNavbar from "components/Navbars/ColorNavbar.js";
+import WeidongNavbar from "components/Navbars/WeidongNavbar.js";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
@@ -54,7 +54,7 @@ function Presentation() {
   });
   return (
     <>
-      <ColorNavbar />
+      <WeidongNavbar/>
       <PresentationHeader />
       <SectionSummary />
       <SectionComponents />

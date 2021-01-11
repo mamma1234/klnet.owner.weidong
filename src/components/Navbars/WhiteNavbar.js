@@ -70,6 +70,9 @@ function WhiteNavbar() {
                   Components
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
+                <DropdownItem to="/booking" tag={Link}>
+                    Booking
+                  </DropdownItem>
                   <DropdownItem to="/index" tag={Link}>
                     All Components
                   </DropdownItem>

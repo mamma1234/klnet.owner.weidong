@@ -1,0 +1,19 @@
+
+	@media only screen and (min-width: 768px) {
+		.popover-container>.popover {
+		max-width:490px;
+    	min-width:490px;
+		}
+     }
+     @media only screen and (min-width: 1200px) {
+		.popover-container>.popover {
+		max-width:790px;
+    	min-width:790px;
+		}
+     }
+     @media only screen and (min-width: 1300px) {
+		.popover-container>.popover {
+		max-width:890px;
+    	min-width:890px;
+		}
+     }

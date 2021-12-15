@@ -1,0 +1,72 @@
+.rbc-toolbar {
+  width: 87%;
+}
+.listButton {
+  position: absolute;
+  right: 20px;
+}
+.calendarButton {
+  display: flex;
+  justify-content: flex-end;
+  //padding: 7px 20px 0 0;
+  margin-bottom: 10px;
+}
+
+.filterInfo {
+  display: flex;
+
+  &--title {
+    font-family: '나눔고딕', 'Nanum Gothic', 'NG', '맑은 고딕', 'Malgun Gothic',
+      Gulim, '굴림', Sans-serif;
+    align-self: center;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  &__route {
+    margin-top: 2px;
+    flex-basis: 58%;
+  }
+  &__date {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+  .hello {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .filterInfo {
+    display: flex;
+    flex-direction: column;
+    &__route {
+      width: 100%;
+    }
+    &__date {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  * {
+    box-sizing: border-box;
+  }
+  .filterInfo {
+    &__date {
+    }
+  }
+}

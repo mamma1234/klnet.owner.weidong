@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="weidong_sr" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="845ac274-e13b-4c2f-b5f7-48f4d98f3f6b">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="11"/>
+	<property name="ireport.background.image.properties" value="true,true,1.0,-4,285,8,65,317,66"/>
+	<style name="table 1">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<subDataset name="detail_query" uuid="41f7c43d-3e05-4ba5-a731-1be5b90e5a45">
+		<parameter name="user_no" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="sr_no" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="sr_date" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[select mark_desc as mark_cntr,package,goods_desc,total_weight,total_volume from
+(select * from generate_series(1,(select max(cCnt)  from (
+			select count(1) as cCnt from (
+			select *
+			  from (
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc2, 2 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc3, 3 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc4, 4 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc5, 5 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 ) a
+			 order by a.cargo_seq, goods_seq, seq)a
+			union all
+			select count(1) as cCnt from (
+			select  a.mark_desc,row_number()over() as mark_cntr_seq from (
+			select a.mark_desc,a.mark_seq::integer as sub_seq,1 as seq from (
+			select mark_desc,mark_seq from (
+			select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union
+			select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			) a
+			 order by a.cargo_seq, a.mark_seq, a.seq) a
+			union all
+			select  a.cntr_no,a.cntr_seq::integer as sub_seq,2 as seq from (
+			select a.cntr_no||'/'||case when (a.cntr_seal is not null or a.cntr_seal != '') then a.cntr_seal else '' end||' '||
+			(select service_type
+				from own_line_code_service_type
+				where line_code='WDFC'
+				and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+			)as cntr_no ,cntr_seq
+			from
+			shp_sr_cntr a
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+			 )a
+			order by seq,sub_seq)a)a)a))as seq) a
+left outer join
+(select  a.mark_desc,row_number()over(order by gb,seq) as seq from (
+select a.mark_desc,a.mark_seq::integer as sub_seq,seq,gb from (
+select mark_desc,mark_seq,1 as gb,row_number()over(order by a.mark_seq,a.seq) as seq from (
+select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+ union all
+select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+) a
+ order by a.cargo_seq, a.mark_seq, a.seq) a
+union all
+select  a.cntr_no,a.cntr_seq::integer as sub_seq,cntr_seq::integer as seq,2 as gb from (
+select a.cntr_no||'/'||case when (a.cntr_seal is not null or a.cntr_seal != '') then a.cntr_seal else '' end||' '||
+(select service_type
+	from own_line_code_service_type
+	where line_code='WDFC'
+	and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+)as cntr_no ,cntr_seq
+from
+shp_sr_cntr a
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+ )a
+order by seq,sub_seq)a)b
+on a.seq = b.seq
+left outer join
+ (select a.package,row_number()over()as seq from (
+select cargo_pack_qty||' PACKAGES' as package,1 as seq from shp_sr_cargo
+ where user_no = $P{user_no}
+and sr_no = $P{sr_no}
+and sr_date = $P{sr_date}
+and cargo_seq = '1'
+union all
+ select cntr_code||' X '||count(cntr_code)||' containers' as package,2 as seq from shp_sr_cntr ssc
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+group by cntr_code)a
+order by seq::integer) c
+on a.seq = c.seq
+left outer join (select a.*,row_number()over()as cCnt from
+(select *
+  from (
+select cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc2, 2 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc3, 3 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc4, 4 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union
+select cargo_seq,goods_seq,goods_desc5, 5 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ ) a
+ order by a.cargo_seq, goods_seq, seq)a)d
+ on a.seq = d.ccnt
+left outer join (select a.cargo_total_weight || ' KGS' as total_weight
+,a.cargo_total_volume || ' CBM' as total_volume , 1 as seq
+FROM shp_sr_cargo a
+where user_no = $P{user_no}
+and sr_no = $P{sr_no}
+and sr_date = $P{sr_date}) e
+on a.seq = e.seq
+limit 15;]]>
+		</queryString>
+		<field name="mark_cntr" class="java.lang.String"/>
+		<field name="package" class="java.lang.String"/>
+		<field name="goods_desc" class="java.lang.String"/>
+		<field name="total_weight" class="java.lang.String"/>
+		<field name="total_volume" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="detail_query_offset16" uuid="a4093096-ea8a-45e4-a0a2-10ca4cfdc72f">
+		<parameter name="user_no" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="sr_no" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="sr_date" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[select * from (
+select mark_desc as mark_cntr,package,goods_desc,total_weight,total_volume from
+(select * from generate_series(1,(select max(cCnt)  from (
+			select count(1) as cCnt from (
+			select *
+			  from (
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc2, 2 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc3, 3 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc4, 4 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc5, 5 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 ) a
+			 order by a.cargo_seq, goods_seq, seq)a
+			union all
+			select count(1) as cCnt from (
+			select  a.mark_desc,row_number()over() as mark_cntr_seq from (
+			select a.mark_desc,a.mark_seq::integer as sub_seq,1 as seq from (
+			select mark_desc,mark_seq from (
+			select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			 union all
+			select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			union all
+			select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+			from shp_sr_cargo_mark
+			 where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+			) a
+			 order by a.cargo_seq, a.mark_seq, a.seq) a
+			union all
+			select  a.cntr_no,a.cntr_seq::integer as sub_seq,2 as seq from (
+			select a.cntr_no||'/'||case when (a.cntr_seal is not null or a.cntr_seal != '') then a.cntr_seal else '' end||' '||
+			(select service_type
+				from own_line_code_service_type
+				where line_code='WDFC'
+				and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+			)as cntr_no ,cntr_seq
+			from
+			shp_sr_cntr a
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+			 )a
+			order by seq,sub_seq)a)a)a))as seq) a
+left outer join
+(select  a.mark_desc,row_number()over(order by gb,seq) as seq from (
+select a.mark_desc,a.mark_seq::integer as sub_seq,seq,gb from (
+select mark_desc,mark_seq,1 as gb,row_number()over(order by a.mark_seq,a.seq) as seq from (
+select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+ union all
+select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+union all
+select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+from shp_sr_cargo_mark
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+) a
+ order by a.cargo_seq, a.mark_seq, a.seq) a
+union all
+select  a.cntr_no,a.cntr_seq::integer as sub_seq,cntr_seq::integer as seq,2 as gb from (
+select a.cntr_no||'/'||case when (a.cntr_seal is not null or a.cntr_seal != '') then a.cntr_seal else '' end||' '||
+(select service_type
+	from own_line_code_service_type
+	where line_code='WDFC'
+	and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+)as cntr_no ,cntr_seq
+from
+shp_sr_cntr a
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+ )a
+order by seq,sub_seq)a)b
+on a.seq = b.seq
+left outer join
+ (select a.package,row_number()over()as seq from (
+select cargo_pack_qty||' PACKAGES' as package,1 as seq from shp_sr_cargo
+ where user_no = $P{user_no}
+and sr_no = $P{sr_no}
+and sr_date = $P{sr_date}
+and cargo_seq = '1'
+union all
+ select cntr_code||' X '||count(cntr_code)||' containers' as package,2 as seq from shp_sr_cntr ssc
+ where user_no = $P{user_no}
+  and sr_no = $P{sr_no}
+  and sr_date = $P{sr_date}
+group by cntr_code)a
+order by seq::integer) c
+on a.seq = c.seq
+left outer join (select a.*,row_number()over()as cCnt from
+(select *
+  from (
+select cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc2, 2 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc3, 3 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc4, 4 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ union all
+select cargo_seq,goods_seq,goods_desc5, 5 as seq
+  from shp_sr_cargo_goods
+where user_no = $P{user_no}
+			  and sr_no = $P{sr_no}
+			  and sr_date = $P{sr_date}
+ ) a
+ order by a.cargo_seq, goods_seq, seq)a)d
+ on a.seq = d.ccnt
+left outer join (select a.cargo_total_weight || ' KGS' as total_weight
+,a.cargo_total_volume || ' CBM' as total_volume , 1 as seq
+FROM shp_sr_cargo a
+where user_no = $P{user_no}
+and sr_no = $P{sr_no}
+and sr_date = $P{sr_date}) e
+on a.seq = e.seq
+limit 15
+offset 15)a;]]>
+		</queryString>
+		<field name="mark_cntr" class="java.lang.String"/>
+		<field name="package" class="java.lang.String"/>
+		<field name="goods_desc" class="java.lang.String"/>
+		<field name="total_weight" class="java.lang.String"/>
+		<field name="total_volume" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="user_no" class="java.lang.String"/>
+	<parameter name="sr_no" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="sr_date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT aa.*,
+               coalesce( aa.shp_name1,'')||coalesce( aa.shp_name2,'') as shp_nm,
+	case when aa.shp_address1 is not null then aa.shp_address1 else '' end ||
+	case when aa.shp_address2 is not null then aa.shp_address2 else '' end ||
+	case when aa.shp_address3 is not null then aa.shp_address3 else '' end ||
+	case when aa.shp_address4 is not null then aa.shp_address4 else '' end ||
+	case when aa.shp_address5 is not null then aa.shp_address5 else '' end as shp_addr,
+	coalesce(aa.noti_name1,'')||coalesce(aa.noti_name2,'') as noti_nm,
+	case when aa.noti_address1 is not null then aa.noti_address1 else '' end ||
+	case when aa.noti_address2 is not null then aa.noti_address2 else '' end ||
+	case when aa.noti_address3 is not null then aa.noti_address3 else '' end ||
+	case when aa.noti_address4 is not null then aa.noti_address4 else '' end ||
+	case when aa.noti_address5 is not null then aa.noti_address5 else '' end as noti_addr,
+	case when aa.cons_address1 is not null then aa.cons_address1 else '' end ||
+	case when aa.cons_address2 is not null then aa.cons_address2 else '' end ||
+	case when aa.cons_address3 is not null then aa.cons_address3 else '' end ||
+	case when aa.cons_address4 is not null then aa.cons_address4 else '' end ||
+	case when aa.cons_address5 is not null then aa.cons_address5 else '' end as cons_addr,
+	coalesce(aa.cons_name1,'')||coalesce(aa.cons_name2,'') as cons_nm,
+case when aa.line_payment_type is not null then
+      case when aa.line_payment_type = 'P' then '*** FREIGHT PREPAID ***'
+           else '*** FREIGHT COLLECTED ***' end
+     else '' end as line_payment1,
+case when aa.line_payment_type is not null then 'FREIGHT AS ARRANGED'
+     else '' end as line_payment2,
+     substring(aa.sr_date,1,4)||'.'||substring(aa.sr_date,5,2)||'.'||substring(aa.sr_date,7,2) as reg_date,
+case when aa.bl_type is not null then
+	case when aa.bl_type = '1' then 'THREE(3)' else 'ZERO(0)' end
+     else '' end as bl_type_label,
+(
+select count(1) from (
+select mark_desc as mark_cntr,package,goods_desc,total_weight,total_volume from
+(select * from generate_series(1,(select max(cCnt)  from (
+			select count(1) as cCnt from (
+			select *
+			  from (
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = aa.user_no
+			  and sr_no = $P{sr_no}
+			  and sr_date = aa.sr_date
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc2, 2 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc3, 3 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc4, 4 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			 union all
+			select user_no,sr_no,sr_date,cargo_seq,goods_seq,goods_desc5, 5 as seq
+			  from shp_sr_cargo_goods
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			 ) a
+			 order by a.cargo_seq, goods_seq, seq)a
+			union all
+			select count(1) as cCnt from (
+			select  a.mark_desc,row_number()over() as mark_cntr_seq from (
+			select a.mark_desc,a.mark_seq::integer as sub_seq,1 as seq from (
+			select mark_desc,mark_seq from (
+			select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			 union all
+			select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			union all
+			select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+			from shp_sr_cargo_mark
+			 where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+			) a
+			 order by a.cargo_seq, a.mark_seq, a.seq) a
+			union all
+			select  a.cntr_no,a.cntr_seq::integer as sub_seq,2 as seq from (
+			select a.cntr_no||'/'||a.cntr_seal||' '||
+			(select service_type
+				from own_line_code_service_type
+				where line_code='WDFC'
+				and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+			)as cntr_no ,cntr_seq
+			from
+			shp_sr_cntr a
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+			 )a
+			order by seq,sub_seq)a)a)a))as seq) a
+left outer join
+(select  a.mark_desc,row_number()over(order by gb,seq) as seq from (
+select a.mark_desc,a.mark_seq::integer as sub_seq,seq,gb from (
+select mark_desc,mark_seq,1 as gb,row_number()over(order by a.mark_seq,a.seq) as seq from (
+select  cargo_seq,mark_seq,mark_desc1 as mark_desc,1 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc2 as mark_desc,2 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc3 as mark_desc,3 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+ union
+select  cargo_seq,mark_seq,mark_desc4 as mark_desc,4 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc5 as mark_desc,5 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc6 as mark_desc,6 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc7 as mark_desc,7 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc8 as mark_desc,8 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc9 as mark_desc,9 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+union all
+select  cargo_seq,mark_seq,mark_desc10 as mark_desc,10 as seq
+from shp_sr_cargo_mark
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+) a
+ order by a.cargo_seq, a.mark_seq, a.seq) a
+union all
+select  a.cntr_no,a.cntr_seq::integer as sub_seq,cntr_seq::integer as seq,2 as gb from (
+select a.cntr_no||'/'||a.cntr_seal||' '||
+(select service_type
+	from own_line_code_service_type
+	where line_code='WDFC'
+	and service_code = (select trans_service_code from shp_sr where user_no = a.user_no and sr_no = a.sr_no and sr_date = a.sr_date)
+)as cntr_no ,cntr_seq
+from
+shp_sr_cntr a
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+ )a
+order by seq,sub_seq)a)b
+on a.seq = b.seq
+left outer join
+ (select a.package,a.seq from (
+select cargo_pack_qty||' PACKAGES' as package,1 as seq from shp_sr_cargo
+ where user_no = aa.user_no
+and sr_no = aa.sr_no
+and sr_date = aa.sr_date
+and cargo_seq = '1'
+union all
+ select cntr_code||' X '||count(cntr_code)||' containers' as package,2 as seq from shp_sr_cntr ssc
+ where user_no = aa.user_no
+  and sr_no = aa.sr_no
+  and sr_date = aa.sr_date
+group by cntr_code)a
+order by seq::integer) c
+on a.seq = c.seq
+left outer join (select a.*,row_number()over()as cCnt from
+(select *
+  from (
+select cargo_seq,goods_seq,goods_desc1 as goods_desc, 1 as seq
+  from shp_sr_cargo_goods
+where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+ union all
+select cargo_seq,goods_seq,goods_desc2, 2 as seq
+  from shp_sr_cargo_goods
+where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+ union
+select cargo_seq,goods_seq,goods_desc3, 3 as seq
+  from shp_sr_cargo_goods
+where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+ union all
+select cargo_seq,goods_seq,goods_desc4, 4 as seq
+  from shp_sr_cargo_goods
+where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+ union all
+select cargo_seq,goods_seq,goods_desc5, 5 as seq
+  from shp_sr_cargo_goods
+where user_no = aa.user_no
+			  and sr_no = aa.sr_no
+			  and sr_date = aa.sr_date
+ ) a
+ order by a.cargo_seq, goods_seq, seq)a)d
+ on a.seq = d.ccnt
+left outer join (select a.cargo_total_weight || ' KGS' as total_weight
+,a.cargo_total_volume || ' CBM' as total_volume , 1 as seq
+FROM shp_sr_cargo a
+where user_no = aa.user_no
+and sr_no = aa.sr_no
+and sr_date = aa.sr_date) e
+on a.seq = e.seq
+limit 15
+offset 15)a
+) second_page
+FROM public.shp_sr aa
+where aa.user_no = $P{user_no}
+and aa.sr_no = $P{sr_no}
+and aa.sr_date = $P{sr_date}]]>
+	</queryString>
+	<field name="user_no" class="java.lang.String"/>
+	<field name="sr_no" class="java.lang.String"/>
+	<field name="sr_date" class="java.lang.String"/>
+	<field name="owner_no" class="java.lang.String"/>
+	<field name="insert_date" class="java.sql.Timestamp"/>
+	<field name="update_date" class="java.sql.Timestamp"/>
+	<field name="status_cus" class="java.lang.String"/>
+	<field name="send_date" class="java.lang.String"/>
+	<field name="sending_count" class="java.math.BigDecimal"/>
+	<field name="shp_user_name" class="java.lang.String"/>
+	<field name="shp_user_dept" class="java.lang.String"/>
+	<field name="shp_user_tel" class="java.lang.String"/>
+	<field name="shp_user_email" class="java.lang.String"/>
+	<field name="shp_user_fax" class="java.lang.String"/>
+	<field name="shp_address1" class="java.lang.String"/>
+	<field name="shp_address2" class="java.lang.String"/>
+	<field name="shp_address3" class="java.lang.String"/>
+	<field name="shp_address4" class="java.lang.String"/>
+	<field name="shp_address5" class="java.lang.String"/>
+	<field name="shp_name1" class="java.lang.String"/>
+	<field name="shp_name2" class="java.lang.String"/>
+	<field name="shp_force" class="java.lang.String"/>
+	<field name="cons_code" class="java.lang.String"/>
+	<field name="cons_address1" class="java.lang.String"/>
+	<field name="cons_address2" class="java.lang.String"/>
+	<field name="cons_address3" class="java.lang.String"/>
+	<field name="cons_address4" class="java.lang.String"/>
+	<field name="cons_address5" class="java.lang.String"/>
+	<field name="cons_name1" class="java.lang.String"/>
+	<field name="cons_name2" class="java.lang.String"/>
+	<field name="shp_un_code" class="java.lang.String"/>
+	<field name="noti_code" class="java.lang.String"/>
+	<field name="noti_address1" class="java.lang.String"/>
+	<field name="noti_address2" class="java.lang.String"/>
+	<field name="noti_address3" class="java.lang.String"/>
+	<field name="noti_address4" class="java.lang.String"/>
+	<field name="noti_address5" class="java.lang.String"/>
+	<field name="noti_name1" class="java.lang.String"/>
+	<field name="noti_name2" class="java.lang.String"/>
+	<field name="line_code" class="java.lang.String"/>
+	<field name="line_address1" class="java.lang.String"/>
+	<field name="line_address2" class="java.lang.String"/>
+	<field name="line_address3" class="java.lang.String"/>
+	<field name="line_address4" class="java.lang.String"/>
+	<field name="line_address5" class="java.lang.String"/>
+	<field name="line_name1" class="java.lang.String"/>
+	<field name="line_name2" class="java.lang.String"/>
+	<field name="line_user_name" class="java.lang.String"/>
+	<field name="line_user_dept" class="java.lang.String"/>
+	<field name="line_user_tel" class="java.lang.String"/>
+	<field name="line_user_email" class="java.lang.String"/>
+	<field name="line_payment_type" class="java.lang.String"/>
+	<field name="line_payment_area_name" class="java.lang.String"/>
+	<field name="sch_vessel_name" class="java.lang.String"/>
+	<field name="sch_vessel_voyage" class="java.lang.String"/>
+	<field name="sch_feeder_vessel_name" class="java.lang.String"/>
+	<field name="sch_feeder_vessel_voyage" class="java.lang.String"/>
+	<field name="sch_barge_onboard_date" class="java.lang.String"/>
+	<field name="sch_pol" class="java.lang.String"/>
+	<field name="sch_pol_name" class="java.lang.String"/>
+	<field name="sch_pod" class="java.lang.String"/>
+	<field name="sch_pod_name" class="java.lang.String"/>
+	<field name="sch_fdp" class="java.lang.String"/>
+	<field name="sch_fdp_name" class="java.lang.String"/>
+	<field name="sch_por" class="java.lang.String"/>
+	<field name="sch_por_name" class="java.lang.String"/>
+	<field name="sch_pld" class="java.lang.String"/>
+	<field name="sch_pld_name" class="java.lang.String"/>
+	<field name="sch_bl_issue_name" class="java.lang.String"/>
+	<field name="sch_tsp" class="java.lang.String"/>
+	<field name="sch_tsp_name" class="java.lang.String"/>
+	<field name="res_bk_no" class="java.lang.String"/>
+	<field name="sc_no" class="java.lang.String"/>
+	<field name="document_no" class="java.lang.String"/>
+	<field name="trans_service_code" class="java.lang.String"/>
+	<field name="bl_type" class="java.lang.String"/>
+	<field name="hbl_yn" class="java.lang.String"/>
+	<field name="sch_srd" class="java.lang.String"/>
+	<field name="remark1" class="java.lang.String"/>
+	<field name="remark2" class="java.lang.String"/>
+	<field name="remark3" class="java.lang.String"/>
+	<field name="remark4" class="java.lang.String"/>
+	<field name="remark5" class="java.lang.String"/>
+	<field name="invoice_no" class="java.lang.String"/>
+	<field name="po_no" class="java.lang.String"/>
+	<field name="lc_yn" class="java.lang.String"/>
+	<field name="lc_no" class="java.lang.String"/>
+	<field name="org_bl_need_yn" class="java.lang.String"/>
+	<field name="sr_amount" class="java.lang.String"/>
+	<field name="lc_expiry_date" class="java.lang.String"/>
+	<field name="part_sr_qty" class="java.lang.String"/>
+	<field name="cargo_class" class="java.lang.String"/>
+	<field name="sch_scd" class="java.lang.String"/>
+	<field name="stuffing_date" class="java.lang.String"/>
+	<field name="clearance_date" class="java.lang.String"/>
+	<field name="shp_user_name2" class="java.lang.String"/>
+	<field name="hs_code" class="java.lang.String"/>
+	<field name="incoterms_code" class="java.lang.String"/>
+	<field name="sea_air_kind" class="java.lang.String"/>
+	<field name="xml_msg_id" class="java.lang.String"/>
+	<field name="xmldoc_seq" class="java.lang.String"/>
+	<field name="sr_amount_currency" class="java.lang.String"/>
+	<field name="sr_amount_remark" class="java.lang.String"/>
+	<field name="via_usa" class="java.lang.String"/>
+	<field name="goods_type_code" class="java.lang.String"/>
+	<field name="intermediate" class="java.lang.String"/>
+	<field name="currency" class="java.lang.String"/>
+	<field name="classification_code" class="java.lang.String"/>
+	<field name="master_si_number" class="java.lang.String"/>
+	<field name="corp_code" class="java.lang.String"/>
+	<field name="load_type" class="java.lang.String"/>
+	<field name="docu_type" class="java.lang.String"/>
+	<field name="conveyance_mode" class="java.lang.String"/>
+	<field name="mbl_no" class="java.lang.String"/>
+	<field name="port_door" class="java.lang.String"/>
+	<field name="corp_yn" class="java.lang.String"/>
+	<field name="dept_code" class="java.lang.String"/>
+	<field name="com_user_dept" class="java.lang.String"/>
+	<field name="com_user_tel" class="java.lang.String"/>
+	<field name="com_user_email" class="java.lang.String"/>
+	<field name="noti2_address1" class="java.lang.String"/>
+	<field name="noti2_address2" class="java.lang.String"/>
+	<field name="noti2_address3" class="java.lang.String"/>
+	<field name="noti2_address4" class="java.lang.String"/>
+	<field name="noti2_address5" class="java.lang.String"/>
+	<field name="noti2_name1" class="java.lang.String"/>
+	<field name="noti2_name2" class="java.lang.String"/>
+	<field name="fwd_code" class="java.lang.String"/>
+	<field name="fwd_address1" class="java.lang.String"/>
+	<field name="fwd_address2" class="java.lang.String"/>
+	<field name="fwd_address3" class="java.lang.String"/>
+	<field name="fwd_address4" class="java.lang.String"/>
+	<field name="fwd_address5" class="java.lang.String"/>
+	<field name="fwd_name1" class="java.lang.String"/>
+	<field name="fwd_name2" class="java.lang.String"/>
+	<field name="line2_code" class="java.lang.String"/>
+	<field name="line2_address1" class="java.lang.String"/>
+	<field name="line2_address2" class="java.lang.String"/>
+	<field name="line2_address3" class="java.lang.String"/>
+	<field name="line2_address4" class="java.lang.String"/>
+	<field name="line2_address5" class="java.lang.String"/>
+	<field name="line2_name1" class="java.lang.String"/>
+	<field name="line2_name2" class="java.lang.String"/>
+	<field name="consignee_bookmark_seq" class="java.lang.String"/>
+	<field name="line_bookmark_seq" class="java.lang.String"/>
+	<field name="notify_bookmark_seq" class="java.lang.String"/>
+	<field name="schedule_bookmark_seq" class="java.lang.String"/>
+	<field name="shipper_bookmark_seq" class="java.lang.String"/>
+	<field name="other_bookmark_seq" class="java.lang.String"/>
+	<field name="originator" class="java.lang.String"/>
+	<field name="recipient" class="java.lang.String"/>
+	<field name="com_user_name" class="java.lang.String"/>
+	<field name="status_cud" class="java.lang.String"/>
+	<field name="res_mrn" class="java.lang.String"/>
+	<field name="res_bkg_no" class="java.lang.String"/>
+	<field name="res_mbl_no" class="java.lang.String"/>
+	<field name="res_issue_date" class="java.lang.String"/>
+	<field name="res_user_name" class="java.lang.String"/>
+	<field name="res_bl_recv_date" class="java.sql.Timestamp"/>
+	<field name="klnet_id" class="java.lang.String"/>
+	<field name="res_bl_klnet_id" class="java.lang.String"/>
+	<field name="bookmark_seq" class="java.lang.String"/>
+	<field name="cargo_bookmark_seq" class="java.lang.String"/>
+	<field name="xml_msg_id_vgm" class="java.lang.String"/>
+	<field name="xml_msg_id_declare" class="java.lang.String"/>
+	<field name="sch_eta" class="java.lang.String"/>
+	<field name="res_user_no" class="java.lang.String"/>
+	<field name="c_shp_address1" class="java.lang.String"/>
+	<field name="c_shp_address2" class="java.lang.String"/>
+	<field name="c_shp_address3" class="java.lang.String"/>
+	<field name="c_shp_address4" class="java.lang.String"/>
+	<field name="c_shp_address5" class="java.lang.String"/>
+	<field name="c_shp_name1" class="java.lang.String"/>
+	<field name="c_shp_name2" class="java.lang.String"/>
+	<field name="c_shp_country_code" class="java.lang.String"/>
+	<field name="c_shp_user_name" class="java.lang.String"/>
+	<field name="c_shp_user_dept" class="java.lang.String"/>
+	<field name="c_shp_user_tel" class="java.lang.String"/>
+	<field name="c_shp_user_fax" class="java.lang.String"/>
+	<field name="c_shp_user_email" class="java.lang.String"/>
+	<field name="c_shp_code" class="java.lang.String"/>
+	<field name="c_cons_address1" class="java.lang.String"/>
+	<field name="c_cons_address2" class="java.lang.String"/>
+	<field name="c_cons_address3" class="java.lang.String"/>
+	<field name="c_cons_address4" class="java.lang.String"/>
+	<field name="c_cons_address5" class="java.lang.String"/>
+	<field name="c_cons_name1" class="java.lang.String"/>
+	<field name="c_cons_name2" class="java.lang.String"/>
+	<field name="c_cons_country_code" class="java.lang.String"/>
+	<field name="c_cons_user_name" class="java.lang.String"/>
+	<field name="c_cons_user_dept" class="java.lang.String"/>
+	<field name="c_cons_user_tel" class="java.lang.String"/>
+	<field name="c_cons_user_fax" class="java.lang.String"/>
+	<field name="c_cons_user_email" class="java.lang.String"/>
+	<field name="c_cons_code" class="java.lang.String"/>
+	<field name="c_noti_address1" class="java.lang.String"/>
+	<field name="c_noti_address2" class="java.lang.String"/>
+	<field name="c_noti_address3" class="java.lang.String"/>
+	<field name="c_noti_address4" class="java.lang.String"/>
+	<field name="c_noti_address5" class="java.lang.String"/>
+	<field name="c_noti_name1" class="java.lang.String"/>
+	<field name="c_noti_name2" class="java.lang.String"/>
+	<field name="c_noti_country_code" class="java.lang.String"/>
+	<field name="c_noti_user_name" class="java.lang.String"/>
+	<field name="c_noti_user_dept" class="java.lang.String"/>
+	<field name="c_noti_user_tel" class="java.lang.String"/>
+	<field name="c_noti_user_fax" class="java.lang.String"/>
+	<field name="c_noti_user_email" class="java.lang.String"/>
+	<field name="c_noti_code" class="java.lang.String"/>
+	<field name="shp_code" class="java.lang.String"/>
+	<field name="part_bl" class="java.lang.String"/>
+	<field name="update_user" class="java.lang.String"/>
+	<field name="shp_nm" class="java.lang.String"/>
+	<field name="shp_addr" class="java.lang.String"/>
+	<field name="noti_nm" class="java.lang.String"/>
+	<field name="noti_addr" class="java.lang.String"/>
+	<field name="cons_nm" class="java.lang.String"/>
+	<field name="cons_addr" class="java.lang.String"/>
+	<field name="line_payment1" class="java.lang.String"/>
+	<field name="line_payment2" class="java.lang.String"/>
+	<field name="reg_date" class="java.lang.String"/>
+	<field name="bl_type_label" class="java.lang.String"/>
+	<field name="second_page" class="java.lang.Long"/>
+	<title>
+		<band height="284">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="283" uuid="4601e988-7f7c-4688-920a-337fd2dbd282"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="66" width="298" height="1" uuid="8de1360e-ebe7-4357-a629-c121148679af"/>
+			</line>
+			<line>
+				<reportElement x="0" y="131" width="298" height="1" uuid="eb18fd74-8b6e-4371-845f-7740ea50ebe4"/>
+			</line>
+			<line>
+				<reportElement x="0" y="196" width="298" height="1" uuid="ddbd4d10-2f67-470d-9961-2cf1735798f6"/>
+			</line>
+			<line>
+				<reportElement x="0" y="225" width="298" height="1" uuid="f064f2dc-5698-4b1c-8b2c-9a57a0e35b34"/>
+			</line>
+			<line>
+				<reportElement x="0" y="254" width="555" height="1" uuid="81e8015f-861c-4016-a502-2a4324deb7fe"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="2" width="100" height="19" uuid="69a896b8-0712-4459-95ed-6ecdfef31066"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Shipper]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="69" width="100" height="20" uuid="c219209b-7986-4ed8-9eae-acc3d7ac8fd5"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Consingee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="134" width="100" height="20" uuid="c879d372-aa1b-4a54-bdde-4b062b3b4e7e"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Notify Party]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="198" width="100" height="20" uuid="fe9823b1-5c01-4ff5-84a0-8ce74471e64e"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Pre Carriage by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="228" width="100" height="20" uuid="0d6a93f4-2df8-478f-a60c-6b455c4fc7e8"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Ocean vessel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="257" width="100" height="20" uuid="8cc9ead2-6316-4e5f-8b63-649586bdb1a5"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Port of discharge]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="349" y="32" width="160" height="20" uuid="999a5b30-6168-48b6-a11b-a95192987f78"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="36" width="160" height="20" uuid="4808a406-5c03-4de6-93f0-5a9172975f40"/>
+				<textElement textAlignment="Center">
+					<font pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sr_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="17" width="188" height="19" uuid="6f603dea-0a73-4898-9927-c379cb316d51"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shp_nm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="3" y="38" width="295" height="33" uuid="f3dfa9f9-ec1a-4f2a-aa1b-be28a0ec03f3"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shp_addr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="3" y="104" width="295" height="33" uuid="2636fce5-604d-4d37-a9d3-9e317edbba5c"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cons_addr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="85" width="188" height="19" uuid="f3bd60bf-da38-478b-be8e-61bedcab88ec"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cons_nm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="320" y="117" width="233" height="28" uuid="69b76881-e26f-4b13-b79f-1c728f0edca6"/>
+				<textElement>
+					<font fontName="SansSerif" size="20" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[SHIPPING REQUEST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="145" width="233" height="79" uuid="419773c9-7f21-48e8-987c-a71f6f7f2520"/>
+				<textElement>
+					<font size="8" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[본 양식은 귀사의 선적예정 화물 관련 S/R (CHECK BL) 입니다. 최종 B/L 발행을 위하여 이상유무를 정확히 확인하신 후, 전송 및 마감 바랍니다.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="149" width="199" height="19" uuid="133c0f1d-c84f-45c2-bc26-0c069f6db9f5"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noti_nm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="4" y="168" width="295" height="33" uuid="c2b69415-0971-4c5d-b128-f5c8c5d8e0de"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noti_addr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="207" y="198" width="100" height="20" uuid="aa4c1fee-3c34-46b9-b913-f1a4f4193317"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Place of receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="228" width="100" height="20" uuid="8d79fb44-faa7-4129-8218-771c79e4e5b9"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Voy No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="228" width="100" height="20" uuid="c1db5770-d61c-4022-b3a2-76af30f4a3be"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Port of loading]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="257" width="100" height="20" uuid="2a54bc21-0688-4983-b97e-37fb105329f0"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Port of delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="257" width="123" height="20" uuid="a50a3361-9972-42ec-afb7-448149ce11b2"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Final Detination for the Mecharnt'sreference]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="207" y="214" width="126" height="19" uuid="c2833c29-0713-4828-82a1-bf9eb0cc4401"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_por_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="243" width="126" height="19" uuid="f283b0d1-c8b4-42ff-b55e-f8b309c6d3da"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_vessel_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="132" y="243" width="126" height="19" uuid="da786e48-2b71-4093-9d13-75fb4e20c22f"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_vessel_voyage}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="207" y="243" width="126" height="19" uuid="a1e6a4fc-b0ff-4146-a2f3-5139536713a1"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_pol_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="416" y="263" width="126" height="19" uuid="bdfbabf7-a4a1-404b-aa4e-568c2a06dfd2"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_fdp_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="263" width="126" height="19" uuid="ed8c8e01-2a0f-4598-b74c-acceef173ef6"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_pod_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="207" y="263" width="126" height="19" uuid="1393ed18-51da-4d38-bab6-9c5de90dad36"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_pld_name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="320" y="61" width="219" height="56" uuid="699ebb7d-586f-4400-968d-11c66ff00503"/>
+				<imageExpression><![CDATA["/OWNER/REPORTS/WEIDONG/images/weidong_title.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="515" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="463" width="85" height="20" uuid="469dacb7-8f8a-4d7d-81a5-b791fb020fde"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="408" width="85" height="20" uuid="7f742200-169d-47f9-a537-c9ac6dbf63cf"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Ex. Rate]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="329" y="423" width="100" height="11" uuid="1a7e3101-4f7b-4a8e-9c52-b8f3fb696a0b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sch_bl_issue_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="432" y="335" width="85" height="20" uuid="6c3527f0-afef-4745-9722-13c621c2d791"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Collect]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="335" width="85" height="20" uuid="2c6560af-00e4-4ff4-b4a2-c8daa6d14e49"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Revenue Tons]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="436" width="85" height="20" uuid="75b77621-bf1e-4767-86e7-4a58cc378000"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Total Prepaid in U.S.Dollas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="408" width="85" height="20" uuid="5e4eb282-3864-4dc7-ba2a-7686a2ce12d0"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Prepaid at]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="408" width="85" height="20" uuid="c2d735c0-7be8-4a2b-8ca2-6664ab3bc831"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Payable at]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="460" width="328" height="1" uuid="fc854734-8709-42a9-b5b4-bc315380eced"/>
+			</line>
+			<staticText>
+				<reportElement x="361" y="481" width="153" height="20" uuid="10b5054d-0530-4908-b88c-3f8deb2cc304"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[As Agents for the Carrier Weidong Ferry Co Ltd.]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="362" y="469" width="156" height="18" uuid="2ad91038-69e2-4d5a-9c93-e077f4cdeb1e"/>
+				<box leftPadding="5" bottomPadding="2" rightPadding="5"/>
+				<imageExpression><![CDATA["/OWNER/REPORTS/WEIDONG/images/weidong_logo_2.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="328" y="335" width="1" height="177" uuid="191a6b44-59ee-4cb8-ab44-8f21e82f13db"/>
+			</line>
+			<textField>
+				<reportElement x="17" y="483" width="77" height="20" uuid="892b436a-1ae7-47dc-9ea1-2bd8628f76a4"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reg_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="122" y="476" width="85" height="20" uuid="449f15b5-83c1-4bf5-ac5a-3f6f6469ddd7"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[By]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="334" width="555" height="1" uuid="243f0e42-be45-48c5-a7fb-4f961cfccdd5"/>
+			</line>
+			<staticText>
+				<reportElement x="213" y="335" width="62" height="20" uuid="130f85eb-41fb-4432-8394-e9b539e515bb"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Rate]]></text>
+			</staticText>
+			<line>
+				<reportElement x="207" y="335" width="1" height="72" uuid="46733bf1-9fd1-4abb-b1fd-94d107cda879"/>
+			</line>
+			<line>
+				<reportElement x="426" y="335" width="1" height="72" uuid="497f0635-cedf-44e5-b35f-dcca2acc2603"/>
+			</line>
+			<line>
+				<reportElement x="55" y="434" width="498" height="1" uuid="4f9eee66-0315-4c13-8262-c1b9880eda8a"/>
+			</line>
+			<line>
+				<reportElement x="55" y="408" width="1" height="52" uuid="a3208954-c64c-459a-b091-4605111c4070"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="335" width="100" height="20" uuid="66fe9f77-04f0-409d-a270-e26fc9717273"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Freight and Charges]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="423" width="77" height="12" uuid="f3f949cf-1649-45d8-bdc6-98d9481459e5"/>
+				<textElement verticalAlignment="Top">
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reg_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="311" width="100" height="24" uuid="bdf708e5-dcb4-4aa8-9a37-3e9434b7cb2c"/>
+				<textElement>
+					<font size="7" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[(*) Total No. Containers
+   or Package(in words)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="472" width="85" height="20" uuid="0e1f6e53-172b-4652-b8d9-a203f9f6b106"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[By]]></text>
+			</staticText>
+			<line>
+				<reportElement x="111" y="461" width="1" height="51" uuid="8f95832f-2f63-4ecd-9562-33add37d46a1"/>
+			</line>
+			<line>
+				<reportElement x="182" y="408" width="1" height="52" uuid="3d877467-dfd3-494c-a263-cb2bfcbccc21"/>
+			</line>
+			<line>
+				<reportElement x="122" y="334" width="1" height="73" uuid="60442bb6-707c-45df-9647-7705c8f77012"/>
+			</line>
+			<line>
+				<reportElement x="112" y="492" width="443" height="1" uuid="6a0dfafc-a642-46a9-9c2c-c772d0764bf9"/>
+			</line>
+			<line>
+				<reportElement x="0" y="407" width="555" height="1" uuid="461f7320-ee0c-44e5-b326-3650718b2930"/>
+			</line>
+			<line>
+				<reportElement x="0" y="304" width="555" height="1" uuid="85d13f29-5f39-421d-ac33-c9c15ddaad8c"/>
+			</line>
+			<staticText>
+				<reportElement x="368" y="501" width="147" height="11" uuid="e180ecf8-643b-490c-ac20-47ffbf9d27ac"/>
+				<textElement>
+					<font size="8" isBold="true" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[WEIDONG SHIPPING CO., LTD.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="335" width="85" height="20" uuid="027cdfd7-3611-472a-8ab6-dce9f8535aae"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Prepaid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="335" width="51" height="20" uuid="af1ddf66-6539-4ee8-bc09-03b54902f766"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Per]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="436" width="85" height="20" uuid="50abec40-e831-4854-aeb6-e1708e33e955"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[No of original B(s)/L]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="408" width="85" height="20" uuid="cd50869e-b29a-4737-b087-3264d31952e4"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Pacle and date of issue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="463" width="85" height="20" uuid="ec189b76-ba6b-4207-9449-4eee5e4b01d9"/>
+				<textElement>
+					<font size="6" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[Laden on board the Vessel]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="361" y="437" width="156" height="29" uuid="6f82c4df-868f-4e02-a2bb-3b77e711c597"/>
+				<box topPadding="2" leftPadding="5" rightPadding="5"/>
+				<imageExpression><![CDATA["/OWNER/REPORTS/WEIDONG/images/weidong_logo1.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="162" y="346" width="100" height="20" uuid="74cb99c4-3652-468b-9eed-dce6b2d94f6f"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line_payment1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="356" width="100" height="20" uuid="51e1d031-6b3f-42e4-bd7a-ee77b3b69441"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line_payment2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="446" width="73" height="14" uuid="92e123f0-7644-4e26-9049-978c037f9c9f"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bl_type_label}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="423" width="100" height="11" uuid="db06125e-c261-469a-815b-2abc14a26d09"/>
+				<textElement>
+					<font size="8" isBold="true" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[SEOUL, KOREA]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="" mode="Transparent" x="0" y="0" width="555" height="303" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="731a4f97-bd75-4e81-87f0-472141aaba14"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="detail_query" uuid="5e1d6c41-84d3-455d-bc78-5ac0c1b82932">
+						<datasetParameter name="user_no">
+							<datasetParameterExpression><![CDATA[$F{user_no}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="sr_no">
+							<datasetParameterExpression><![CDATA[$F{sr_no}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="sr_date">
+							<datasetParameterExpression><![CDATA[$F{sr_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="113" uuid="a228f7fd-6497-4c88-a6cc-d77304176dd2">
+						<jr:columnHeader height="18" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="113" height="18" uuid="a96787ee-4de1-46d7-9c26-c11dd5f8f11b"/>
+								<textElement>
+									<font size="6" isBold="false" pdfEncoding="Cp1252"/>
+									<paragraph firstLineIndent="1" leftIndent="1" rightIndent="1" spacingBefore="1"/>
+								</textElement>
+								<text><![CDATA[ Makers and Members
+                     Container and Seal No.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="17" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="113" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="6b366643-a081-4a8a-9d3c-904b15ffb3bc"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{mark_cntr}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="76" uuid="b8654f3f-38c7-4fec-afa8-324ba20de222">
+						<jr:columnHeader height="18" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="76" height="18" uuid="93bb44ed-8d49-46b2-8baa-15c01065dfdc"/>
+								<textElement>
+									<font size="6" pdfEncoding="Cp1252"/>
+								</textElement>
+								<text><![CDATA[ No of containers or pkgs]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="17" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="76" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="be84064c-ff51-4b1f-ab5a-57199a92d0f5"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{package}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="256" uuid="94c66349-a0c0-4960-8391-896e75c7664d">
+						<jr:columnHeader height="18" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="256" height="18" uuid="a6d1530d-bd63-4979-8fdf-1418c9630c5e"/>
+								<textElement>
+									<font size="6" pdfEncoding="Cp1252"/>
+								</textElement>
+								<text><![CDATA[                        Kind of packages ; description of goods]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="17" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="256" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="af570acc-6c09-4756-ac3c-e536d887d8ad"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font fontName="SansSerif" size="6" isBold="false" isUnderline="false" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{goods_desc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="58" uuid="32029c04-5afa-4f25-beaf-f3c6de87b7c5">
+						<jr:columnHeader height="18" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="58" height="18" uuid="ba88ed58-869d-43db-8611-b932a26cdb21"/>
+								<textElement>
+									<font size="6" pdfEncoding="Cp1252"/>
+								</textElement>
+								<text><![CDATA[ Gross weight]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="17" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="58" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="2115d2d2-552f-4bf2-a88e-492ce0b9a48a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total_weight}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="0b9d82b3-9930-4391-b0cb-42d61f587da6">
+						<jr:columnHeader height="18" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="51" height="18" uuid="2005fd4c-47f9-4f49-91aa-4708f0856f00"/>
+								<textElement textAlignment="Left">
+									<font size="6" pdfEncoding="Cp1252"/>
+								</textElement>
+								<text><![CDATA[ Measurement]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="17" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="51" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="89dfc7e5-0cf2-4edf-aeb1-20fcd6a7392c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total_volume}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<line>
+				<reportElement x="185" y="0" width="1" height="305" isPrintWhenDetailOverflows="true" uuid="9574f877-cd7c-4e46-91c6-d3df28b281bf"/>
+			</line>
+			<line>
+				<reportElement x="110" y="0" width="1" height="305" isPrintWhenDetailOverflows="true" uuid="a51680a2-9406-4e65-99f9-9e56c40b23d5"/>
+			</line>
+			<line>
+				<reportElement x="445" y="0" width="1" height="305" isPrintWhenDetailOverflows="true" uuid="52868114-c280-4833-b44d-6446a8512588"/>
+			</line>
+			<line>
+				<reportElement x="503" y="0" width="1" height="305" isPrintWhenDetailOverflows="true" uuid="5d33ab7d-6961-4daa-bdc7-a99ef172f450"/>
+			</line>
+		</band>
+		<band height="802" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{second_page}.intValue()>0]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="335" y="1" width="160" height="20" uuid="17b83270-ce09-4233-b060-e1e03f417a13"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="335" y="4" width="160" height="20" uuid="bd70160d-5854-40bc-adf6-3ee2c03d05fe"/>
+				<textElement textAlignment="Center">
+					<font pdfFontName="./fonts/malgun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sr_no}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement x="335" y="702" width="197" height="18" uuid="ebd341e3-5a70-45b7-a183-78b0c119577d"/>
+				<box leftPadding="5" bottomPadding="2" rightPadding="5"/>
+				<imageExpression><![CDATA["/OWNER/REPORTS/WEIDONG/images/weidong_logo_2.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="302" y="704" width="85" height="20" uuid="c7ec0832-c9af-4f9e-a1a0-5daf8fd0795f"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[by]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="336" y="664" width="197" height="29" uuid="5f1e891b-5854-4d01-9513-895f725d2bd8"/>
+				<box topPadding="2" leftPadding="5" rightPadding="5"/>
+				<imageExpression><![CDATA["/OWNER/REPORTS/WEIDONG/images/weidong_logo1.png"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement key="" isPrintRepeatedValues="false" mode="Transparent" x="0" y="26" width="528" height="303" uuid="bb714b7d-9ea4-4c80-881d-f695cd17c159"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="detail_query_offset16" uuid="04094ba9-4451-4bac-820b-9a8a3a0f7655">
+						<datasetParameter name="user_no">
+							<datasetParameterExpression><![CDATA[$F{user_no}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="sr_no">
+							<datasetParameterExpression><![CDATA[$F{sr_no}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="sr_date">
+							<datasetParameterExpression><![CDATA[$F{sr_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="113" uuid="da19ec2b-f04f-4fea-9063-d57aeecdf104">
+						<jr:columnHeader height="6" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="113" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="d83573d4-d055-4d96-a93c-697a5e99ce59"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{mark_cntr}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="76" uuid="30418c16-3c87-4b21-aa6d-7eca0f4f93af">
+						<jr:columnHeader height="6" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="76" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="61a006c6-b945-428e-a23a-351e7963edc2"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{package}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="226" uuid="108425d3-a303-4f5d-a692-66dd378622c4">
+						<jr:columnHeader height="6" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="226" height="16" isPrintWhenDetailOverflows="true" uuid="4563eb9f-f64e-4556-81f7-697156a90347"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{goods_desc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="68" uuid="25037f5e-d012-4a31-9213-6a630ec74d28">
+						<jr:columnHeader height="6" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="68" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="6f21b003-55a6-459f-b489-fe653106d779"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single" firstLineIndent="1"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total_weight}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="71" uuid="d1ed5a74-bf99-4f8e-90b4-b65fa2ba4085">
+						<jr:columnHeader height="6" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0" lineColor="#000000"/>
+								<topPen lineWidth="0.0" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineColor="#000000"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement mode="Transparent" x="0" y="0" width="71" height="16" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="a1ed042e-e0cf-4915-a968-6a4c4b26bcb3"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+									<font size="6" isUnderline="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total_volume}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

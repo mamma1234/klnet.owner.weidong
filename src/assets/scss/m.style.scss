@@ -1,0 +1,66 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .searchInfo {
+    display: flex;
+    flex-direction: column;
+    &__route {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__date {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search_option {
+    display: flex;
+    flex-direction: column;
+    &--calendar {
+      display: flex;
+      padding-right: 0;
+      margin-bottom: 7px;
+    }
+    &--number {
+      display: flex;
+      //margin-bottom: 7px;
+      &--text {
+        text-align: start;
+      }
+    }
+    // &--new {
+    //   display: flex;
+    //   justify-content: flex-start;
+    //   position: absolute;
+    //   top: 145px;
+    //   #new {
+    //     height: auto;
+    //     font-size: 12px;
+    //     padding: 4px 10px;
+    //   }
+    // }
+  }
+  .result_option {
+    margin: 0px 35px 0px 40px;
+  }
+  .result_count {
+    margin-top: -20px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,133 @@
+#con_body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  ul,
+  ol,
+  form {
+    margin: 0;
+    padding: 0;
+  }
+
+  min-height: 300px;
+  margin: 50px 0 50px 22px;
+  line-height: 22px;
+  font-family: '나눔고딕', 'Nanum Gothic', 'NG', '맑은 고딕', 'Malgun Gothic',
+    Gulim, '굴림', Sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.site_map_area {
+  margin-bottom: 40px;
+
+  max-width: 800px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+  ol,
+  ul {
+    list-style: none;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #333;
+    text-decoration: underline;
+  }
+  .site_map_box {
+    width: 218px;
+    margin-right: 22px;
+
+    border-top: 1px solid #d5d9dd;
+
+    margin-bottom: 40px;
+
+    h4 {
+      width: 218px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border-bottom: 1px solid #d5d9dd;
+      //background: #0078c2;  rgb(0, 152, 225)
+      background-color: #51bcda;
+      a {
+        font-size: 17px;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    ul li {
+      padding: 0;
+
+      a {
+        display: block;
+        padding: 10px 10px;
+        color: #3a4350;
+        border-bottom: 1px solid #d5d9dd;
+        border-left: 1px solid #d5d9dd;
+        border-right: 1px solid #d5d9dd;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      ul {
+        padding: 5px 0;
+        background: #f7f7f7;
+        border-bottom: 1px solid #d5d9dd;
+        li {
+          border-bottom: 0;
+          a {
+            display: block;
+            padding: 5px 0 5px 25px;
+            border-bottom: 0;
+            color: #555;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: normal;
+            //background: url('../img/bu_bar.gif') no-repeat 13px 13px;
+          }
+          ul {
+            margin: 5px 10px;
+            border-top: 1px solid #d5d9dd;
+            border-bottom: 1px solid #d5d9dd;
+            background: #fff;
+            li {
+              font-size: 12px;
+              font-weight: normal;
+              border-bottom: 0;
+              a {
+                display: block;
+                padding: 2px 0 2px 22px;
+                border-bottom: 0;
+                color: #555;
+                line-height: 20px;
+                //background: url(../../images/contents/bu_dot.gif) no-repeat 15px 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.site_map_wrap {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+@media (max-width: 1174px) {
+  .site_map_wrap {
+    display: block;
+    width: auto;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,43 @@
+
+     .customSelect>.customSelect__control {
+        border-radius:4px;
+     	min-height:31px;
+     	height:31px;
+     	box-sizing:border-box;
+     	border-collapse:separate; 
+     	display:table;   
+     	width:100%; 	
+     }
+     .customSelect>.customSelect__control, .customSelect>.customSelect__control:hover {
+     	box-shadow:none;
+     	background-color:transparent;
+     }
+     .customSelect>.customSelect__control>.customSelect__value-container, .customSelect>.customSelect__control>.customSelect__indicators {
+      display:table-cell;
+      padding-bottom:1px;
+      }
+     .customSelect.react-select-primary>.customSelect__control>.customSelect__value-container--has-value>.customSelect__single-value, .customSelect.react-select-primary>.customSelect__control>.customSelect__value-container--has-value>.customSelect__multi-value__label {
+     color:#51cbce;
+     }
+     .customSelect>.customSelect__control>.customSelect__value-container--has-value>.customSelect__single-value {
+     top:48%;
+     color:#333333;
+     }
+     
+     .customSelect>.customSelect__control>.customSelect__indicators {
+     width:60px;
+     padding-rigth:10px;
+     align-items:flex-end;
+     vertical-align:middle;
+     text-align:right;
+     }
+     
+     .customSelect>.customSelect__control>.react-select__indicators>.customSelect__indicator-separator {
+	     display:none;
+     }
+     
+     .customSelect>.customSelect__control>.customSelect__indicators>.customSelect__indicator {
+         color:#66615b;
+	     padding:0;
+	     display:inline-block;
+     }

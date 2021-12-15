@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+  /*schedule*/
+  .searchInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchInfo__route {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .searchInfo__date {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  /*List*/
+  .search_option {
+    display: flex;
+    flex-direction: column;
+  }
+  .search_option--calendar {
+    display: flex;
+    padding-right: 0;
+    margin-bottom: 7px;
+  }
+  .search_option--number {
+    display: flex;
+  }
+  .search_option--number--text {
+    text-align: start;
+  }
+  .result_option {
+    margin: 0px 35px 0px 40px;
+  }
+  .result_count {
+    margin-top: -20px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .padding_custom {
+    padding: 0px;
+  }
+}

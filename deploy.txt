@@ -1,0 +1,4 @@
+# 2021.12.02 ldg
+
+src/views/sr/request/sections/title/SrTitleCard.js
+src/views/bl/index.js

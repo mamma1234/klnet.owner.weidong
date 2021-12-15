@@ -1,0 +1,19 @@
+.table-cntr-hd {
+    font-size:10px;
+    font-weight: 'bold';
+}
+.text-area-2 {
+    resize: none;
+    max-lines: 2;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.no-alert {
+    margin-bottom: auto;
+}
